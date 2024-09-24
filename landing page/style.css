@@ -1,0 +1,352 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body nav{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow:0 0 10px rgb(238, 226, 125);
+    background:#bdb189;
+    position:fixed;
+    left: 0;
+    z-index: 100;
+}
+
+body nav .logo img{
+    width: 100px;
+    cursor: pointer;
+    margin: 8px 0;
+}
+
+body nav ul{
+    list-style: none;
+}
+
+body nav li{
+    display: inline-block;
+    padding: 0 10px;
+}
+
+body nav li a{
+    text-decoration: none;
+    color: #000000;
+    margin:0 25px;
+    font-size: 25px;
+    text-decoration: none;
+
+}
+
+body nav li a:hover{
+    color:rgb(111, 224, 221) ;
+    position: relative;
+}
+
+
+.Social i{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    background: linear-gradient(130.08deg, #383528 0%, #191919  100%);
+    box-shadow: 0px 20px 40px rgb(13, 228, 221)rgb(111, 224, 221);
+    border: 1px solid #3b3b3b;
+    border-radius: 50%;
+    color: rgb(111, 224, 221) ;
+    font-size: 20px;
+    margin: 0 7px;
+    transition: all 0.6s ease-in-out;
+}
+
+.Social i:hover{
+    transform: translateY(-10px);
+    color: #e1afaf;
+}
+
+body{
+    background: url(bgimg_reduced_opacity.png);
+   }
+
+.main-sec{
+    height: 1000px;
+    margin-top: 10px;
+    display:flex;
+    width:100%;
+}
+
+.left-box{
+    margin-top: 80x;
+    margin-right: 20px;
+    height: 600px;
+    width: 50%;
+    
+}
+ 
+.right-box{
+    margin-top: 220px;
+    margin-left: 200px;
+    height: 600px;
+    width: 50%;
+    
+    
+}
+
+.left-box h1{
+    position: relative;
+    margin-top: 100px;
+    font-size: 55px;
+    top:120px;
+    left:20px;
+}
+
+.left-box h1 span{
+    color:#191919;
+    border:2px solid rgb(6, 6, 5);
+    background-color:  #efe3bd ;
+}
+
+.left-box h3{
+    width: 850px;
+    margin-top:35px;
+    line-height: 23px;
+    position:relative;
+    top: 125px;
+    margin-left:30px;
+    font-size: 25px;
+    font-family:'Times New Roman', Times, serif;
+
+}
+
+.left-box a{
+    background:#bdb189;
+    border:2px solid #000;
+    padding: 15px 30px;
+    position:absolute;
+    top: 600px;
+    left: 20px;
+    color:#fff;
+    text-decoration: none;
+}
+
+.right-box img {
+    width:600px;
+    position: relative;
+}
+
+.featured_books{
+    width: 200%;
+}
+
+.featured_books{
+    width:100%;
+    height: 100vh;
+    padding: 70px 0;
+}
+
+.featured_books h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+    
+}
+
+.featured_books .featured_book_box{
+    width: 95%;
+    height: 60vh;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+}
+
+.featured_book_card{
+    width: 250px;
+    height: 400px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid #9d880e;
+    margin: auto 20px;
+}
+
+.featured_book_card:hover{
+    box-shadow: 0 0 20px #000000;
+}
+
+.featured_book_card:hover .featured_book_img img{
+    transform: scale(1.1);
+
+}
+
+.featured_book_img img{
+    width:150px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+} 
+.featured_book_img {
+    width:150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow:0 0 8px #000000;
+}
+
+.featured_book_tag h2{
+    margin:12px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.writer{
+    color:rgb(11, 11, 11);
+}
+
+.categories{
+    color:rgb(20, 24, 24);
+    margin-top: 7px;
+}
+
+.book_price{
+    margin-top: 7px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.book_price sub{
+    font-weight: 500;
+    padding: 0 5px;
+}
+
+.arrivals{
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.arrivals h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.arrivals_box{
+    width: 95%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:25px 0;
+}
+
+.arrivals_card{
+    width: 250px;
+    height:340px;
+    text-align: center;
+    padding: 5px;
+    border:1px solid #9d880e;
+    margin: auto 20px; 
+}
+
+.arrivals_card:hover{
+    box-shadow: 0 0 20px;
+}
+
+.arrivals_image{
+    width: 150px;
+    height: 220px;
+    margin:0 auto;
+    cursor: pointer;
+    box-shadow:0 0 8px #000000;
+    overflow: hidden;
+}
+
+.arrivals_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.arrivals_card:hover .arrivals_image img{
+    transform: scale(1.1);
+}
+
+.arrivals_tag p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+.arrivals_icon{
+    color: rgb(6, 7, 7);
+    margin-bottom: 15px;
+}
+
+.arrivals_btn{
+    padding:8px 20px;
+    border: 2px solid #000;
+    color: #383528;
+    text-decoration: none;
+   
+}
+
+        /*services*/
+
+.services{
+    width: 100%;
+    height: auto;
+    margin: 35px 0;
+    
+}        
+.services h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.services_box{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+
+.services_card{
+    text-align: center;
+    width: 310px;
+    height: auto;
+    box-shadow: 0 0 15px #383528;
+    padding: 15px 10px;
+    background-color:#8f896d;
+}
+.services_card:hover{
+    box-shadow:0 0 40px #383528;
+
+}
+
+.services_card i{
+    color:#040404;
+    font-size: 45px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.services_card h3{
+    margin-bottom: 10px;
+}
